@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ms-reserva
+
+server:
+  port: 8700
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    hostname: ${HOSTNAME:localhost}

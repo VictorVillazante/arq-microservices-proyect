@@ -1,0 +1,11 @@
+server:
+  port: 7500
+spring:
+  application:
+    name: ms-medico
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    hostname: ${HOSTNAME:localhost}
