@@ -5,12 +5,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-
-@FeignClient(contextId = "msMedico",name = "ms-reserva")
 @Service
+@FeignClient(contextId = "msMedico",name = "ms-reserva")
 public interface ReservasService {
     @RequestMapping(value="/reserva/obtenerReservas", method=RequestMethod.GET)
-    Object obtenerConsultas();
+    String obtenerReservas();
     
 }
     

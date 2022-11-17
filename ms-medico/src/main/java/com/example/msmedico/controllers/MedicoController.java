@@ -26,7 +26,7 @@ public class MedicoController {
 
     @RequestMapping(value = "obtenerConsultas",method = RequestMethod.GET)
     public ResponseEntity<Object> obtenerConsultas(){
-        Object res=this.reservasService.obtenerConsultas();
+        String res=reservasService.obtenerReservas();
         return new ResponseEntity<Object>("ok "+res,HttpStatus.OK);
     }
 

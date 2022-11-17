@@ -1,6 +1,17 @@
 spring:
   application:
     name: ms-reserva
+  datasource:
+    url: jdbc:mysql://${IP:localhost}:${PORT:3306}/${DATABASE:hospital}
+    username: root
+    password: ${PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
 
 server:
   port: 8700
@@ -11,3 +22,36 @@ eureka:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
     hostname: ${HOSTNAME:localhost}
+
+keycloak:
+  realm: hospital
+  cors: true
+  auth-server-url: http://localhost:8080/auth
+  resource: ms-reservas
+  credentials:
+    secret: ekMlY8mrGYcsloX2frWyq4YpuFiskQID
+  autodetect-bearer-only: true
+  security-constraints:
+    - auth-roles:
+        - ADMINISTRADOR
+      security-collections: 
+        - name: ENDPOINT ADM
+          omitted-methods:
+            - OPTIONS
+          patterns:
+               - /adm/pacientes
+    - auth-roles:
+        - MEDICO
+      security-collections:
+        - name: ENDPOINT MEDICO
+          omitted-methods:
+            - OPTIONS
+          patterns:
+            - /medicos/especialidades
+    - security-collections:
+        - omitted-methods:
+          - OPTIONS
+        - patterns:
+          - /pacientes/reservas/{id}
+  ssl-required: external
+  use-resource-role-mappings: false

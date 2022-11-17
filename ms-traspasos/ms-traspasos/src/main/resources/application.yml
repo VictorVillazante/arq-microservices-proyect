@@ -1,0 +1,22 @@
+server:
+  port: 8999
+spring:
+  application:
+    name: ms-traspasos
+  datasource:
+    url: jdbc:mysql://${IP:localhost}:${PORT:3306}/${DATABASE:hospital}
+    username: root
+    password: ${PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    hostname: ${HOSTNAME:localhost}

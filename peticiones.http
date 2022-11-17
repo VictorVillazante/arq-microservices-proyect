@@ -1,1 +1,38 @@
-GET http://localhost:7500/medico/obtenerConsultas
+GET http://localhost:7500/medico/obtener        Consultas
+
+
+###ENDPOINTS RESERVAS
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+GET http://localhost:8700/pacientes/reservas/1
+###
+GET http://localhost:8700/adm/pacientes
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiOFhETWdvZm5zcnJiY3hHb1JLNUVEdHFxeV9zTXN0SWltajlVandKSlpFIn0.eyJleHAiOjE2Njg1NzcwNjYsImlhdCI6MTY2ODU3Njc2NiwiYXV0aF90aW1lIjoxNjY4NTc1ODI0LCJqdGkiOiI2NDFkZTlhNy04OTlmLTQxOTItYmM4Yi0wOGRjOWFiYTI0YjUiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvYXV0aC9yZWFsbXMvSG9zcGl0YWwiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiYzAxYTI3OTEtNjFlNi00YmY4LWJlMmMtYjMzYTUxMDc1NjYxIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZnJvbnRlbmQtaG9zcGl0YWwiLCJub25jZSI6IjFmYTY0ZWM2LTkzMDEtNGIwMC04MTY0LTRmYTUwYTBlNDUxMSIsInNlc3Npb25fc3RhdGUiOiJkZjhjN2JlYi01NDFjLTRiNjMtYTEwMy05Y2ExZGNjZTc2OGMiLCJhY3IiOiIwIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6NDIwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJNRURJQ08iLCJkZWZhdWx0LXJvbGVzLWhvc3BpdGFsIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIiwic2lkIjoiZGY4YzdiZWItNTQxYy00YjYzLWExMDMtOWNhMWRjY2U3NjhjIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiVmljdG9yIE1lZGljbyIsInByZWZlcnJlZF91c2VybmFtZSI6InZpY3Rvci1tZWRpY28iLCJnaXZlbl9uYW1lIjoiVmljdG9yIiwiZmFtaWx5X25hbWUiOiJNZWRpY28iLCJlbWFpbCI6InZpY3Rvci1tZWRpY29AZW1haWwuY29tIn0.opd16AC25MLHOhMlyfEFr-MJa2KH-Pnyvm1wibtH1EogxBtnniI2h5JqFZnY8uUhyK9F0R7ZR7zZnKIC_-5G9akBlzT65Sfo5Wg3OC7ETfhfFjO6IQi_5WRvQ-6RglU-iiwQ_cDhaAyI13pnv9x3DoNtgI4kmJpveo0Pkgu95EPDy0CcOex0RAhM0oyMFkxPoa07VFv67GoItA5S5xYVDXESwz9Qy21Fy6_aWKLaB9Se5-VYYzjZEIEN9WbweMrvJMxKzkR-ESMfXthBtmf2QeqBLnrxfmO-b4nOc7SNIDA2AaWCpiZUI_pgewpoilvn0sHn7Ef33AsaGeOGhMvy6A
+
+###
+GET http://localhost:8700/medicos/especialidades
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiOFhETWdvZm5zcnJiY3hHb1JLNUVEdHFxeV9zTXN0SWltajlVandKSlpFIn0.eyJleHAiOjE2Njg1Nzc0MjQsImlhdCI6MTY2ODU3NzEyNCwiYXV0aF90aW1lIjoxNjY4NTc1MjIzLCJqdGkiOiJkNDJhNWRjZC02OWE4LTRhODItYjA2OS0wMjc2OGNjNTcyMTUiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvYXV0aC9yZWFsbXMvSG9zcGl0YWwiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiMjU3OGQ0NzUtODQ1YS00MzQwLWI1ZmItYzRjYTg2OGIzNzE3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZnJvbnRlbmQtaG9zcGl0YWwiLCJub25jZSI6ImFkY2EyODQ2LTg2ZTktNGRiNy04NjFlLTEzN2E4M2I4YjUyNiIsInNlc3Npb25fc3RhdGUiOiI3NzI3NTdiMS0zMzc0LTQxZTEtYjdkNC0wZmYzMmNlMDZjZDciLCJhY3IiOiIwIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6NDIwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLWhvc3BpdGFsIiwidW1hX2F1dGhvcml6YXRpb24iLCJQQUNJRU5URSJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIGVtYWlsIHByb2ZpbGUiLCJzaWQiOiI3NzI3NTdiMS0zMzc0LTQxZTEtYjdkNC0wZmYzMmNlMDZjZDciLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJWaWN0b3IgUGFjaWVudGUiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2aWN0b3ItcGFjaWVudGUiLCJnaXZlbl9uYW1lIjoiVmljdG9yIiwiZmFtaWx5X25hbWUiOiJQYWNpZW50ZSIsImVtYWlsIjoidmljdG9yLXBhY2llbnRlQGVtYWlsLmNvbSJ9.Rct3WkCYQu82l3_N3oPcEQENNDWlaTFxwLPqAJqAaRDRzw_xhe0JuxTqgLC9Xg3UEWxNT-OR6iPmoQNpcmuj9D6-n4PUiUVC2spkgMKFvFmulJhsJXfAjo37At7X9vxK-sqxoFSMkLETCQQ-3-4gu2NVZ34qCukmEOIxMOAUmobLW6P76NYNkmwu5iaNT5TpuRGIS2NSjt_oyBJLU0NqVHZaGPiCwkyGdj30kIbXRTeJ4dw7qsTvDkbJGPHy6hdA1ya1LNk8JIeXZ9YtpzmkCbkxKCe2mxlgkgUtESRI3aO1yA0G38JuyN8HRfWuXpIoAfNooenLnOE87g2YiPCiXw
+
+###ENDPOINTS CON GATEWAY
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###----------------------------------------------------------------------
+###
+GET http://localhost:8081/reserva/obtenerReservas
+###
+GET http://localhost:8081/adm/pacientes
+###
+GET http://localhost:8081/pacientes/reservas/1
+
+
